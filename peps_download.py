@@ -43,6 +43,7 @@ def check_rename(tmpfile, prodsize, options):
 
 
 def parse_catalog(search_json_file):
+    import json
     # Filter catalog result
     with open(search_json_file) as data_file:
         data = json.load(data_file)
